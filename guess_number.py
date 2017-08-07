@@ -2,9 +2,9 @@
 
 # Guess the number
 
-import random
+from random import randint
 
-target_number = random.randint(1,100)
+target_number = randint(1,100)
 chances = 3
 
 while True:
