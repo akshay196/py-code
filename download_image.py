@@ -7,6 +7,10 @@ import imghdr
 respond = ""
 
 def check_image():
+    """
+    Verifiy requested url is an image and 
+    call download_image() if verified
+    """
     global respond
     
     if len(sys.argv) < 2:
@@ -24,6 +28,9 @@ def check_image():
         print("404 not found")
 
 def download_image():
+    """
+    Download image in current directory
+    """
     global respond
     filename = sys.argv[1].split("/")[-1]
     img_file = open(filename, "wb")
